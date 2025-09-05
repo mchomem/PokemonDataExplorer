@@ -1,0 +1,16 @@
+@PokemonDataExplorer.Api_HostAddress = http://localhost:5076
+
+GET {{PokemonDataExplorer.Api_HostAddress}}/api/pokemon/
+Accept: application/json
+
+###
+
+GET {{PokemonDataExplorer.Api_HostAddress}}/api/pokemon/?offset=1&limit=100
+Accept: application/json
+
+###
+
+GET {{PokemonDataExplorer.Api_HostAddress}}/api/pokemon/pikachu
+Accept: application/json
+
+###
