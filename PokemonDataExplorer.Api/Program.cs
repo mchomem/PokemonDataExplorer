@@ -1,5 +1,8 @@
 var builder = WebApplication.CreateBuilder(args);
 
+// Configure a licença do QuestPDF
+QuestPDF.Settings.License = LicenseType.Community;
+
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

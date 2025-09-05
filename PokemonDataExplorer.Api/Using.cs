@@ -1,7 +1,10 @@
 ﻿global using Microsoft.AspNetCore.Mvc;
 global using Microsoft.Extensions.Options;
 global using PokemonDataExplorer.Api;
-global using PokemonDataExplorer.Api.Dtos;
 global using PokemonDataExplorer.Api.Dtos.PokemonList;
+global using PokemonDataExplorer.Api.Dtos.PokemonSmallData;
+global using QuestPDF.Fluent;
+global using QuestPDF.Helpers;
+global using QuestPDF.Infrastructure;
 global using Refit;
 global using System.Text.Json.Serialization;

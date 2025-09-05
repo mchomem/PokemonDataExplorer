@@ -27,7 +27,7 @@ public class PokemonDto
     public IEnumerable<HeldDto> HeldItems { get; set; } = Enumerable.Empty<HeldDto>();
 
     [JsonPropertyName("id")]
-    public int MyProperty { get; set; }
+    public int Id { get; set; }
 
     [JsonPropertyName("is_default")]
     public bool IsDefault { get; set; }
