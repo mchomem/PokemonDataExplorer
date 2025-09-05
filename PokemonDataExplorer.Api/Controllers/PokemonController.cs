@@ -57,10 +57,10 @@ public class PokemonController : ControllerBase
             },
         };
 
-        if (string.IsNullOrEmpty(pokemonDetails.Sprites.FrontDefault))
-            pokemonSmallData.PokemonPicture = await DownloadImageInMemory(pokemonDetails.Sprites.Other.Home.FrontDefault);
-        else
+        if (string.IsNullOrEmpty(pokemonDetails.Sprites.Other.Home.FrontDefault))
             pokemonSmallData.PokemonPicture = await DownloadImageInMemory(pokemonDetails.Sprites.FrontDefault);
+        else
+            pokemonSmallData.PokemonPicture = await DownloadImageInMemory(pokemonDetails.Sprites.Other.Home.FrontDefault);
 
         var pdfDocument = new PokemonReport(pokemonSmallData);
         var pdfBytes = pdfDocument.GeneratePdf();
